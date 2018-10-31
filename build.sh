@@ -1,12 +1,13 @@
 #!/bin/bash
 
 cd mainline/alpine
-docker build --tag "weised/nginx-alpine-edge:1.15.5-alpine" --tag "weised/nginx-alpine-edge:mainline-alpine" --tag "weised/nginx-alpine-edge:1-alpine" --tag "weised/nginx-alpine-edge:1.15-alpine" --tag "weised/nginx-alpine-edge:alpine" .
+docker build --tag "weised/nginx-alpine-edge:1.15.5-alpine" --tag "weised/nginx-alpine-edge:mainline-alpine" --tag "weised/nginx-alpine-edge:1-alpine" --tag "weised/nginx-alpine-edge:1.15-alpine" --tag "weised/nginx-alpine-edge:alpine"  --tag "weised/nginx-alpine-edge:latest" .
 docker push "weised/nginx-alpine-edge:1.15.5-alpine"
 docker push "weised/nginx-alpine-edge:mainline-alpine"
 docker push "weised/nginx-alpine-edge:1-alpine"
 docker push "weised/nginx-alpine-edge:1.15-alpine"
 docker push "weised/nginx-alpine-edge:alpine"
+docker push "weised/nginx-alpine-edge:latest"
 cd ../..
 
 cd mainline/alpine-perl
